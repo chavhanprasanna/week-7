@@ -10,7 +10,9 @@ export const evenSelector = selector({
     key: "evenSelector",
     get: ({get}) => {
         const count = get(countAtom);
-        return count % 2;
+        
+        //for getting the given count is even ot not
+        return !(count % 2);
     }
 });
 
